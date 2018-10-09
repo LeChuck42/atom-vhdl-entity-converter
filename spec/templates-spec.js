@@ -32,7 +32,7 @@ describe("templates.componentTemplate", function () {
   })
 
   it("can create a component with indent of three spaces", function () {
-    const param = Object.assign({}, DEFAULT_OPTIONS, {indentType: "Spaces", indentSpaceCnt: 3});
+    const param = Object.assign({}, DEFAULT_OPTIONS, {indentType: "Spaces", indentSpaceCount: 3});
     const text = componentTemplate(entities.adder, param)
     expect(text).toEqual(loadFixture("component/adder_indent_3spaces.vhd"))
   })
@@ -62,7 +62,7 @@ describe("templates.instanceTemplate", function () {
   })
 
   it("can create a instance with indent of three spaces", function () {
-    const param = Object.assign({}, DEFAULT_OPTIONS, {indentType: "Spaces", indentSpaceCnt: 3});
+    const param = Object.assign({}, DEFAULT_OPTIONS, {indentType: "Spaces", indentSpaceCount: 3});
     const text = instanceTemplate(entities.adder, param)
     expect(text).toEqual(loadFixture("instance/adder_indent_3spaces.vhd"))
   })
